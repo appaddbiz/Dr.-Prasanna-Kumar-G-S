@@ -6181,7 +6181,7 @@ ol.wp-block-rss {
 }
 
 .main-menu ul.sub-menu li a:before {
-  content: "\f7d9";
+  /* content: "\f7d9"; */
   position: absolute;
   top: 6px;
   left: 10px;
