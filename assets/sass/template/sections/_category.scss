@@ -1,0 +1,80 @@
+/* Category Card -------------------------------------*/
+.category-card {
+    &-wrap {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background-size: 100% 100%;
+        @include md {
+            background-image: none !important;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include xs {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    padding: 40px;
+    @include xl {
+        padding: 30px;
+    }
+    @include md {
+        background-color: #6E768A;
+        position: relative;
+        z-index: 2;
+        margin-right: -1px;
+        margin-bottom: -1px;
+        &:before {
+            content: '';
+            position: absolute;
+            inset: 1px;
+            background-color: $body-bg;
+            z-index: -1;
+            border-radius: 30px;
+        }
+    }
+    &:nth-child(even) {
+        margin-top: 60px;
+        @include md {
+            margin-top: 0;
+        }
+    }
+    &:nth-child(2),
+    &:nth-child(3) {
+        margin-left: 10px;
+        @include lg {
+            margin-left: 0;
+        }
+    }
+    .box-icon {
+        margin-bottom: 30px;
+    }
+    .box-title {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 12px;
+        @include lg {
+            font-size: 28px;
+        }
+    }
+    .box-text {
+        @include lg {
+            font-size: 14px;
+        }
+        @include md {
+            font-size: 16px;
+        }
+    }
+    &:hover {
+        .box-icon {
+            img {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}
+
+.cat-sec1 {
+    max-width: 1620px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+}

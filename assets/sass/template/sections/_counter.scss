@@ -1,0 +1,125 @@
+/* Counter 1 ---------------------------------- */
+.counter-card {
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        .divider {
+            width: 1px;
+            height: 66px;
+            background-color: $border-color;
+            &:last-of-type {
+                display: none;
+            }
+        }
+    }
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .box-number {
+        font-size: 40px;
+        color: $title-color;
+        font-weight: 700;
+        margin-bottom: 0px;
+        margin-top: -0.2em;
+    }
+    .box-text {
+        font-size: 18px;
+        color: $title-color;
+    }
+    .media-body {
+        flex: 1;
+    }
+    &-wrap {
+        &.style2 {
+            background-color: $title-color;
+            padding: 42px 60px;
+            .divider {
+                background-color: rgba($color: #fff, $alpha: 0.5);
+            }
+            @include xl {
+                padding: 40px 30px;
+            }
+            @include sm {
+                padding: 40px 12px;
+            }
+        }
+    }
+    &-wrap {
+        &.style3 {
+            background-color: $theme-color;
+            padding: 42px 8px;
+            text-align: center;
+            justify-content: space-evenly;
+            mask-image: url('data:image/svg+xml,<svg width="1320" height="144" viewBox="0 0 1320 144" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 144H1320V97.5685C1320 86.9599 1315.79 76.7857 1308.28 69.2843L1250.72 11.7157C1243.21 4.21428 1233.04 0 1222.43 0H16C7.16345 0 0 7.16344 0 16V144Z" fill="white"/></svg>');
+            mask-size: 100% 100%;
+            .divider {
+                background-color: rgba($color: #fff, $alpha: 0.5);
+                @include md {
+                    height: 60px;
+                }
+            }
+            @include sm {
+                mask-image: url('data:image/svg+xml,<svg width="401" height="281" viewBox="0 0 401 281" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.88351e-05 281H400V190.717C400 171.004 400.071 81.3476 400.078 60.3992C400.078 58.7419 399.735 57.156 399.07 55.6379L380.371 12.9499C376.172 1.40337 368.889 1.00017 365.674 1.00017H16.3201C13.6423 1.00017 0 -0.0974007 0 17.0848L1.88351e-05 281Z" fill="white"/></svg>');
+            }
+            .counter-card {
+                display: block;
+            }
+        }
+        &.style4 {
+            background-color: $title-color;
+            padding: 42px 8px;
+            text-align: center;
+            justify-content: space-evenly;
+            border-radius: 24px;
+            .divider {
+                background-color: rgba($color: #fff, $alpha: 0.5);
+                @include md {
+                    height: 60px;
+                }
+            }
+            .counter-card {
+                display: block;
+            }
+        }
+    }
+}
+
+@include md {
+    .counter-card {
+        &-wrap {
+            .divider {
+                height: 155px;
+            }
+        }
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        .box-number {
+            font-size: 36px;
+            margin-bottom: 0;
+        }
+    }
+}
+@include sm {
+    .counter-card {
+        &-wrap {
+            flex-wrap: wrap;
+            position: relative;
+            gap: 32px;
+            .divider {
+                display: none;
+            }
+        }
+        flex: calc(50% - 18px);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@include xs {
+    .counter-card {
+        &-wrap {
+            gap: 36px 20px;
+        }
+        flex: calc(50% - 10px);
+    }
+}

@@ -1,0 +1,119 @@
+.widget_nav_menu,
+.widget_meta,
+.widget_pages,
+.widget_archive,
+.widget_categories,
+.wp-block-categories {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 0 0;
+    }
+    a {
+        font-size: 16px;
+        font-weight: 500;
+        display: block;
+        padding: 17px 32px 17px 0;
+        font-size: 16px;
+        line-height: 1.313;
+        color: $title-color;
+        transition: 0.4s ease-in-out;
+        border-bottom: 1px solid $border-color;
+        &::before {
+            content: '\f061';
+            position: absolute;
+            right: 0;
+            top: 17px;
+            font-family: $icon-font;
+            font-weight: 600;
+            color: inherit;
+        }
+        img {
+            margin-top: -3px;
+            margin-right: 6px;
+        }
+    }
+
+    li {
+        display: block;
+        position: relative;
+        > span {
+            color: $title-color;
+            text-align: center;
+            font-weight: 500;
+            position: absolute;
+            right: 0;
+            top: 14px;
+            transition: all ease-in-out 0.4s;
+            pointer-events: none;
+            min-width: 20px;
+            text-align: right;
+            background-color: $body-bg;
+        }
+    }
+    .menu,
+    > ul {
+        > li {
+            &:last-child {
+                > a {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+     
+    a {
+        &:hover {
+            color: $theme-color;
+            box-shadow: none;
+            ~ span {
+                color: $theme-color;
+            }
+        }
+    }
+    .sub-menu,
+    .children {
+        margin-left: 10px;
+    }
+}
+
+.wp-block-categories {
+    list-style: none;
+    padding: 0;
+    > li {
+        &:last-child {
+            > a {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+.widget_nav_menu,
+.widget_meta,
+.widget_pages {
+    a {
+        padding-right: 20px;
+    }
+}
+
+.widget_nav_menu {
+    .sub-menu {
+        margin-left: 10px;
+    }
+}
+
+.wp-block-archives {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+
+    a:not(:hover) {
+        color: inherit;
+    }
+}
+
+.th-blog ul.wp-block-archives li {
+    margin: 5px 0;
+}

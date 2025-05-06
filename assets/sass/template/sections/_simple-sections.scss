@@ -1,0 +1,196 @@
+.checklist {
+    ul {
+        padding-left: 0;
+        list-style: none;
+        text-align: left;
+        margin-bottom: 0;
+        display: inline-block;
+    }
+    &.list-two-column {
+        ul {
+            display: inline-grid;
+            grid-template-columns: auto auto;
+            gap: 0 40px;
+            @include sm {
+                grid-template-columns: auto;
+                li {
+                    text-align: initial;
+                }
+            }
+        }
+    }
+    li {
+        font-family: $title-font;
+        font-size: 18px;
+        font-weight: 500;
+        color: $title-color;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        &:before {
+            content: url('data:image/svg+xml,<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.421 9.87878C19.0047 9.87878 18.6673 10.2162 18.6673 10.6326C18.6673 15.3155 14.8577 19.125 10.1748 19.125C5.49215 19.125 1.68234 15.3155 1.68234 10.6326C1.68234 5.94991 5.49215 2.14011 10.1748 2.14011C10.5911 2.14011 10.9286 1.80269 10.9286 1.38636C10.9286 0.96999 10.5911 0.632568 10.1748 0.632568C4.66074 0.632568 0.174805 5.11851 0.174805 10.6326C0.174805 16.1464 4.66074 20.6326 10.1748 20.6326C15.6886 20.6326 20.1748 16.1464 20.1748 10.6326C20.1748 10.2162 19.8374 9.87878 19.421 9.87878Z" fill="%23F47629"/><path d="M19.6032 3.36678C19.309 3.07205 18.8316 3.07154 18.5374 3.36553L9.4947 12.3844L6.23212 8.84088C5.9502 8.53486 5.47356 8.51502 5.16704 8.79689C4.86075 9.07881 4.84114 9.55568 5.12306 9.86197L8.91704 13.9823C9.05599 14.1333 9.25044 14.221 9.45548 14.2253C9.46099 14.2255 9.4663 14.2255 9.47157 14.2255C9.67083 14.2255 9.86251 14.1464 10.0037 14.0057L19.6017 4.43283C19.8967 4.13889 19.8972 3.6615 19.6032 3.36678Z" fill="%23F47629"/></svg>');
+            position: relative;
+            top: 3px;
+        }
+        > i {
+            color: $theme-color;
+        }
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+    &.fw-regular {
+        li {
+            font-weight: 400;
+        }
+    }
+    &.mb-45 {
+        @include lg {
+            margin-bottom: 40px;
+        }
+    }
+}
+.check-list {
+    ul {
+        padding-left: 0;
+        list-style: none;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    li {
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        > i {
+            color: $theme-color;
+            margin-right: 5px;
+        }
+    }
+}
+
+.mega-hover {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    &:after,
+    &:before {
+        content: "";
+        position: absolute;
+        pointer-events: none;
+        opacity: 1;
+        z-index: -1;
+    }
+    &:before {
+        top: 0;
+        right: 51%;
+        bottom: 0;
+        left: 50%;
+        background: rgba(255, 255, 255, 0.2);
+    }
+    &:after {
+        top: 50%;
+        right: 0;
+        bottom: 50%;
+        left: 0;
+        background: rgba(255, 255, 255, 0.3);
+    }
+    &:hover {
+        &:before {
+            left: 0;
+            right: 0;
+            opacity: 0;
+            transition: all 900ms linear;
+        }
+        &:after {
+            top: 0;
+            bottom: 0;
+            opacity: 0;
+            transition: all 900ms linear;
+        }
+    }
+}
+.bg-img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.box-img {
+    overflow: hidden;
+    img {
+        width: 100%;
+        transition: 0.4s ease-in-out;
+    }
+}
+.box-icon {
+    img {
+        transition: 0.4s ease-in-out;
+    }
+}
+.th-video {
+    position: relative;
+    border-radius: 10px;
+    img {
+        border-radius: inherit;
+    }
+    .play-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.rounded-10 {
+    border-radius: 10px;
+}
+.rounded-12 {
+    border-radius: 12px;
+}
+.rounded-20 {
+    border-radius: 20px;
+    @include sm {
+        border-radius: 10px;
+    }
+}
+.rounded-30 {
+    border-radius: 30px;
+    @include sm {
+        border-radius: 15px;
+    }
+}
+.rounded-24 {
+    border-radius: 24px;
+    @include sm {
+        border-radius: 15px;
+    }
+}
+.rounded-50 {
+    border-radius: 50px;
+    @include sm {
+        border-radius: 20px;
+    }
+}
+
+.btn-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px 30px;
+}
+
+@include lg {
+    p {
+        &.mb-40 {
+            margin-bottom: 35px;
+        }
+        &.mb-45 {
+            margin-bottom: 38px;
+        }
+    }
+}

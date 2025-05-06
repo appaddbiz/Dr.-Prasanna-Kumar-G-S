@@ -1,0 +1,67 @@
+/* Countdown 1 -------------------------------- */
+.countdown-area {
+    padding: 80px;
+    background-color: $theme-color;
+    border-radius: 50px;
+    position: relative;
+    z-index: 3;
+    @include xl {
+        padding: 60px;
+        border-radius: 35px;
+    }
+    @include sm {
+        border-radius: 15px;
+        padding: 30px;
+    }
+}
+
+.event-counter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    @include sm {
+        gap: 10px;
+    }
+    @include xs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    li {
+        list-style: none;
+        text-align: center;
+        background-image: linear-gradient(160deg, $white-color, transparent);
+        border-radius: 70px;  
+        padding: 35px 5px;
+        position: relative;
+        z-index: 2;
+        &:before {
+            content: '';
+            position: absolute;
+            inset: 2px;
+            border-radius: inherit;
+            background-color: $theme-color;
+            z-index: -1;
+        }
+        @include xs {
+            padding: 25px 5px; 
+        }
+    }
+    .count-number {
+        font-family: $title-font;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 1;
+        color: $white-color;
+        margin-bottom: 11px;
+        @include sm {
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+    }
+    .count-name {
+        font-size: 18px;
+        font-weight: 500;
+        color: $white-color;
+    }
+}

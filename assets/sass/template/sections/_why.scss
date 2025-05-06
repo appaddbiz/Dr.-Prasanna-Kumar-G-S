@@ -1,0 +1,133 @@
+/* Why 1 ---------------------------------- */ 
+.choose-feature {
+    &-wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        margin-bottom: 60px;
+        @include lg {
+            max-width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+        }
+        @include xs {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    background-color: $white-color;
+    box-shadow: 0px 10px 50px rgba(204, 204, 204, 0.32);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 24px;
+    text-align: left;
+    @include sm {
+        flex-direction: column;
+        text-align: center;
+    }
+    .box-title {
+        margin: -0.24em 0;
+        max-width: 190px;
+    }
+    &:hover {
+        .box-icon {
+            img {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}
+
+.img-box2 {
+    position: relative;
+    z-index: 2;
+    margin-left: -305px;
+    height: 100%;
+    @include xxl {
+        margin-left: -200px;
+    }
+    @include ml {
+        margin-left: -100px;
+    }
+    @include lg {
+        margin-left: 0;
+    }
+    .play-btn {
+        --icon-size: 90px;
+        font-size: 20px;
+        position: absolute;
+        top: calc(50% - var(--icon-size)/2);
+        left: calc(50% - var(--icon-size)/2);
+        z-index: 3;
+        @include sm {
+            --icon-size: 70px;
+            font-size: 18px;
+        }
+        &:before,
+        &:after {
+            background-color: transparent;
+            border: 1px solid $white-color;
+        }
+    }
+    .img1 {
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+/* Why 2 ---------------------------------- */ 
+.why-feature {
+    border-radius: 24px;
+    padding: 24px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 24px;
+    background-color: $light-color;
+    &:after {
+        content: url('data:image/svg+xml,<svg width="93" height="90" viewBox="0 0 93 90" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.9487 30.5588C24.254 51.3254 41.1756 68 61.9445 68H68.9993C81.5806 68 91.9008 77.6809 92.9171 90H93V0H0C13.0484 0.0801305 23.6549 10.5815 23.847 23.6471L23.9487 30.5588Z" fill="white"/></svg>');
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        z-index: 2;
+    }
+    .box-number {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $title-color;
+        color: $white-color;
+        font-size: 24px;
+        font-weight: 600;
+        font-family: $title-font;
+        @include equal-size(60px);
+        line-height: 60px;
+        // border: 8px solid $body-bg;
+        text-align: center;
+        border-radius: 99px;
+        z-index: 4;
+    }
+    .box-icon {
+        margin-bottom: 24px;
+    }
+    .box-title {
+        margin-bottom: 8px;
+    }
+    &:hover {
+        .box-icon {
+            img {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}
+.why-img2 {
+    img {
+        vertical-align: bottom;
+    }
+}

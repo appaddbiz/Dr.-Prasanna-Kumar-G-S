@@ -1,0 +1,344 @@
+/* Testimonial Card ---------------------------------- */
+.box-profile {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.testi-card {
+    position: relative;
+    padding: 32px 0 32px 32px;
+    .box {
+        &-text {
+            font-size: 18px;
+            color: $white-color;
+        }
+        &-img {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            border-radius: 24px;
+            max-width: calc(100% - 32px);
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-content {
+            max-width: 415px;
+            margin-left: auto;
+            padding: 30px;
+            position: relative;
+            z-index: 3;
+            border-radius: 16px;
+            &:before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                border-radius: inherit;
+                background-color: $title-color;
+                border-right: 4px solid $theme-color;
+                z-index: -1;
+            }
+        }
+        &-review {
+            color: $theme-color;
+            font-size: 18px;
+            margin-bottom: 13px;
+            i {
+                margin-right: 8px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        &-profile {
+            margin-top: 34px;
+        }
+        &-avater {
+            border-radius: 99px;
+            border: 2px solid $white-color;
+            overflow: hidden;
+        }
+        &-title {
+            color: $theme-color;
+            margin-bottom: 2px;
+        }
+        &-desig {
+            color: $white-color;
+            margin-bottom: -0.45em;
+        }
+    }
+    &.style2 {
+        .box-img {
+            border-radius: 0;
+        }
+        .box-content {
+            border-radius: 0;
+            &:before {
+                transform: skew(-8deg) translateX(-24px);
+                @include xs {
+                    transform: none;
+                }
+            }
+        }
+    }
+    @include vxs {
+        padding: 0;
+        .box {
+            &-img {
+                display: none;
+            }
+            &-text {
+                font-size: 16px;
+            }
+            &-title {
+                font-size: 21px;
+            }
+            &-content {
+                padding: 20px; 
+            }
+        }
+    }
+}
+
+/* Testimonial Box ---------------------------------- */
+.testi-box {
+    &-area {
+        position: relative;
+        z-index: 3;
+        padding: 40px 35px 40px 0;
+        @include lg {
+            text-align: center;
+            padding: 80px 0 120px 0;
+        }
+    }
+    &-tab {
+        position: absolute;
+        bottom: 50%;
+        transform: translateY(50%);
+        right: -70px;
+        z-index: 3;
+        background-color: $title-color;
+        padding: 36px 10px 10px 10px;
+        border-radius: 99px;
+        display: flex;
+        flex-direction: column;
+        .tab-btn {
+            border-radius: 99px;
+            overflow: hidden;
+            cursor: pointer;
+            margin-top: -26px;
+            position: relative;
+            z-index: 1;
+            padding: 3px;
+            background-color: $title-color;
+            transition: 0.4s ease-in-out;
+            order: 1;
+            img {
+                filter: blur(1.5px);
+                transition: 0.4s ease-in-out;
+            }
+            &.active {
+                background-color: $white-color;
+                order: 0;
+                img {
+                    filter: none;
+                }
+            }
+            img {
+                border-radius: 99px;
+            }
+        }
+        @include lg {
+            bottom: 0;
+            right: -12px;
+            transform: none;
+            display: flex;
+            padding: 20px;
+            width: 100%;
+            justify-content: center;
+            .tab-btn {
+                margin-left: -25px;
+                margin-top: 0;
+            }
+        }
+        .indicator {
+            display: none;
+        }
+    }
+    position: relative;
+    .box {
+        &-text {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.5;
+            margin-bottom: 32px;
+            color: $white-color;
+            max-width: 650px;
+            @include lg {
+                max-width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        &-review {
+            color: $theme-color;
+            font-size: 18px;
+            margin-bottom: 30px;
+            margin-top: -4px;
+            i {
+                margin-right: 8px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        &-title {
+            font-size: 28px;
+            color: $white-color;
+            margin-bottom: 5px;
+        }
+        &-desig {
+            color: $white-color;
+            margin-bottom: -0.45em;
+        }
+    }
+}
+
+.testi-sec3 {
+    background-color: $title-color;
+    background-size: auto;
+    background-position: top left;
+    overflow: hidden;
+}
+.testi-img1 {
+    margin-right: -300px;
+    @include lg {
+        margin-right: 0;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+
+/* Testimonial Grid ---------------------------------- */
+.testi-grid {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    padding: 48px;
+    &:before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: $white-color;
+        border-radius: 16px;
+        z-index: -1;
+        mask-image: url('data:image/svg+xml,<svg width="648" height="432" viewBox="0 0 648 432" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M648 0H0V432H552.263C557.684 432 560.394 432 562.911 431.333C565.141 430.742 567.253 429.77 569.152 428.459C571.295 426.98 573.056 424.921 576.58 420.802L640.316 346.297C643.161 342.972 644.583 341.309 645.596 339.435C646.494 337.772 647.153 335.99 647.551 334.142C648 332.059 648 329.871 648 325.495V0Z" fill="white"/></svg>');
+        mask-size: 100% 100%;
+    }
+    .box {
+        &-profile {
+            margin-bottom: 40px;
+        }
+        &-text {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.5;
+            margin-bottom: -8px;
+        }
+        &-review {
+            color: $theme-color;
+            font-size: 18px;
+            margin-bottom: 21px;
+            margin-top: -4px;
+            i {
+                margin-right: 8px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        &-title {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+        &-desig {
+            color: $title-color;
+            margin-bottom: -0.45em;
+        }
+        &-avater {
+            border-radius: 99px;
+            overflow: hidden;
+        }
+        &-icon {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        &-logo {
+            position: absolute;
+            top: 48px;
+            right: 48px;
+            z-index: -1;
+        }
+    }
+    @include lg {
+        padding: 40px;
+        .box-logo {
+            right: 40px;
+            top: 40px;
+        }
+    }
+    @include xs {
+        padding: 32px;
+        .box-logo {
+            right: 26px;
+            top: 50px;
+            max-width: 60px;
+        }
+        .box-title {
+            font-size: 24px;
+        }
+        .box-profile {
+            margin-bottom: 30px;
+        }
+        .box-text {
+            font-size: 18px;
+        }
+    }
+    @include vxs {
+        padding: 20px;
+        .box-logo {
+            display: none;
+        }
+        .box-avater {
+            max-width: 70px;
+        }
+    }
+    &.style2 {
+        &:before {
+            mask-image: url('data:image/svg+xml,<svg width="649" height="370" viewBox="0 0 649 370" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M648.5 4.85994e-07V260.053C648.5 277.726 634.173 292.053 616.5 292.053H614.159C588.33 292.053 567.391 312.992 567.391 338.821C567.391 356.041 553.432 370 536.212 370H0.5L0.500004 0L648.5 4.85994e-07Z" fill="white"/></svg>');
+            mask-position: bottom right;
+            @include xs {
+                mask-image: none;
+            }
+        }
+        .box-review {
+            color: #F47629;
+        }
+        .box-icon {
+            svg {
+                max-width: 70px;
+                @include xl {
+                    max-width: 60px;
+                }
+            }
+            @include xs {
+                display: none;
+            }
+        }
+    }
+}

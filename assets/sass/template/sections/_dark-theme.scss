@@ -1,0 +1,92 @@
+.dark-theme {
+    --title-color         : #fff;
+    --body-color          : #838B9F;
+    --smoke-color         : #0F0F0F;
+    --smoke-color2        : #101018;
+    --th-border-color     : #27282E;
+    --gray-color          : #54595F;
+    --body-bg             : #010101;
+    .th-btn:hover, 
+    .th-btn.active {
+        color: #010101;;
+    }
+    .main-menu ul.sub-menu,
+    .woocommerce-form-register, 
+    .woocommerce-form-coupon, 
+    .woocommerce-form-login {
+        box-shadow: 0px 6px 30px rgba(255, 255, 255, 0.08);
+    }
+    .main-menu ul.sub-menu li a:before {
+        color: $theme-color;
+    }
+    .th-mobile-menu ul li.th-active > a {
+        color: $theme-color;
+    }
+    .th-mobile-menu ul .menu-item-has-children > a .th-mean-expand {
+        background-color: #282525;
+    }
+    .th-menu-wrapper .mobile-logo {
+        background-color: #fff;
+    }
+    .slider-arrow {
+        background-color: $border-color;
+        &:before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            transform: scale(0);
+            background-image: $gr-bg1;
+            border-radius: inherit;
+            transition: 0.4s ease-in-out;
+            z-index: -1;
+        }
+        &:hover {
+            &:before {
+                transform: scale(1);
+            }
+        }
+    }
+    .copyright-wrap {
+        background-color: #27282E;
+    }
+    .play-btn {
+        &:hover {
+            i {
+                color: $body-bg;
+            }
+        }
+    }
+    a:hover {
+        color: $theme-color;
+    }
+    .blog-card {
+        .blog-content {
+            background-color: $smoke-color;
+            box-shadow: none;
+        }
+        .blog-meta span > i, 
+        .blog-meta a > i {
+            color: $theme-color;
+        }
+        .box-title a {
+            background-image: linear-gradient(to left, $theme-color, $theme-color);
+        }
+        .th-btn {
+            background-image: $gr-bg1;
+            &:after {
+                content: '';
+                position: absolute;
+                inset: 1px;
+                background-color: #010407;
+                border-radius: inherit;
+                z-index: -2;
+            }
+            &:before {
+                background-image: $gr-bg1;
+            }
+            &:hover {
+                color: $white-color;
+            }
+        }
+    }
+}

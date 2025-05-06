@@ -1,0 +1,106 @@
+/* Tab Menu 1 ------------------------------------*/
+.tab-menu1 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    border: 1px solid $body-color;
+    border-radius: 35px;
+    padding: 8px;
+    @include lg {
+        margin-top: -15px;
+    }
+    .tab-btn {
+        font-family: $title-font;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 44px;
+        background-color: transparent;
+        border: none;
+        padding: 0 28px;
+        color: $title-color;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        &.active {
+            color: $white-color;
+        }
+        @include sm {
+            padding: 0 18px;
+        }
+    }
+    .indicator {
+        @include indicator();
+        background-color: $theme-color;
+        border-radius: 35px;
+    }
+}
+
+/* Tab Menu 2 ------------------------------------*/
+.tab-menu2 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    z-index: 2;
+    margin-bottom: 60px;
+    margin-top: -20px;
+    @include lg {
+        margin-top: -15px;
+    }
+    .tab-btn {
+        font-family: $title-font;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 60px;
+        background-color: transparent;
+        border: none;
+        padding: 0 32px;
+        color: $title-color;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        border: 1px solid $border-color;
+        border-right: 0;
+        border-left: 0;
+        background-color: $body-bg;
+        border-radius: 32px 32px 32px 32px / 24px 24px 24px 24px;
+        position: relative;
+        z-index: 2;
+        margin: 0 -2px;
+        &:before {
+            content: '';
+            position: absolute;
+            inset: 8px;
+            background-color: $light-color;
+            border-radius: inherit;
+            background-color: $light-color;
+            z-index: -1;
+            transition: 0.4s ease-in-out;
+        }
+        &:last-of-type {
+            border-right: 1px solid $border-color;
+        }
+        &:first-of-type {
+            border-left: 1px solid $border-color;
+        }
+        &.active {
+            color: $white-color;
+            &:before {
+                background-color: $theme-color;
+            }
+        }
+        @include sm {
+            padding: 0 18px;
+        }
+    }
+    .indicator {
+        display: none;
+        // @include indicator();
+        // left: calc(var(--pos-x) + 8px);
+        // top: calc(var(--pos-y) + 8px);
+        // width: calc(var(--width-set) - 18px);
+        // height: calc(var(--height-set) - 18px);
+        // background-color: $theme-color;
+        // border-radius: 32px 32px 32px 32px / 24px 24px 24px 24px;
+        // z-index: 3;
+    }
+}

@@ -1,0 +1,156 @@
+/* Brand 1 ---------------------------------- */
+.brand-box {
+    display: grid;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    min-height: 46px;
+    width: auto;
+    filter: grayscale(1) invert(0.3) brightness(1.4);
+    transition: 0.4s ease-in-out;
+    &:hover {
+        filter: none;
+    }
+}
+.brand-list {
+    &-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .arrow-down {
+            width: 125px;
+            height: 125px;
+            position: relative;
+            z-index: 2;
+            margin: -70px 120px;
+            @include xl {
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            .shape {
+                position: absolute;
+                inset: -53px;
+                animation: spin 10s linear infinite;
+            }
+            .link {
+                display: grid;
+                @include equal-size-lineHeight(125px);
+                border: 1px solid $theme-color;
+                border-radius: 999px;
+                justify-content: center;
+                align-content: center;
+                position: relative;
+                z-index: 2;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    inset: 10px;
+                    background-color: $white-color;
+                    border-radius: inherit;
+                    z-index: -1;
+                }
+            }
+            .icon {
+                display: inline-block;
+                width: 26px;
+                height: 42px;
+                line-height: 42px;
+                border-radius: 99px;
+                border: 1px solid $theme-color;
+                text-align: center;
+                svg {
+                    margin: -2px -1px 0 0;
+                }
+            }
+        }
+        @include md {
+            gap: 10px 20px;
+            .arrow-down {
+                display: none;
+            }
+        }
+        @include sm {
+            flex-direction: column;
+            align-items: unset;
+        }
+    }
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+        gap: 10px;
+    }
+}
+.brand-sec1 {
+    padding: 20px 12px 50px 12px;
+    max-width: 1620px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+    @include md {
+        padding-bottom: 0;
+    }
+    .top-shape {
+        position: absolute;
+        bottom: calc(100% - 5px);
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+}
+/* Brand 2 ---------------------------------- */
+.brand-card {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    min-height: 40px;
+}
+
+.brand-sec3 {
+    max-width: 1856px;
+    margin: 0 auto;
+    @media (max-width: 1850px) {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    .brand-card {
+        min-height: 40px;
+    }
+    .brand-inner {
+        position: relative;
+        z-index: 4;
+        background-color: $body-bg;
+        margin-top: -72px;
+        padding-top: 24px;
+        margin-right: 260px;
+        padding-left: 30px;
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 84px;
+            height: 73px;
+            right: -83px;
+            background-color: $body-bg;
+            mask-size: 100% 100%;
+            z-index: -1;
+        }
+        &:after {
+            mask-image: url('data:image/svg+xml,<svg width="84" height="73" viewBox="0 0 84 73" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M-0.00195312 0.994333C0.649832 0.962347 1.34524 0.960712 2.07929 0.994333H83.998V72.9697C59.9088 72.9697 47.3422 52.3005 44.0701 41.9659C32.4381 9.78311 12.9901 1.49408 2.07929 0.994333H-0.00195312Z" fill="%23D9D9D9"/></svg>');
+            transform: rotate(180deg);
+        }
+        &:before {
+            width: 32px;
+            height: 31px;
+            top: -30px;
+            left: -1px;
+            mask-image: url('data:image/svg+xml,<svg width="32" height="31" viewBox="0 0 32 31" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.9958 30.9961C7.4385 30.9961 -0.36822 8.6185 0.015336 -0.00292969V30.9961H31.9958Z" fill="%23D9D9D9"/></svg>');
+        }
+        @include xs {
+            margin-right: 190px;
+            padding-left: 0;
+        }
+    }
+}

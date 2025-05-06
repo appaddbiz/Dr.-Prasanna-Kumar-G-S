@@ -1,0 +1,397 @@
+/* Service Card ---------------------------------- */
+.service-card {
+    position: relative;
+    z-index: 2;
+    background-color: $white-color;
+    border-radius: 24px;
+    padding: 32px;
+    .box {
+        &-number {
+            font-size: 48px;
+            line-height: 1;
+            font-weight: 700;
+            font-family: $title-font;
+            color: #E1E4E5;
+            position: absolute;
+            right: 32px;
+            top: 32px;
+        }
+        &-title {
+            margin-bottom: 12px;
+        }
+        &-subtitle {
+            color: $theme-color;
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 19px;
+        }
+        &-icon {
+            margin-bottom: 27px;
+        }
+    }
+    .th-btn {
+        margin-top: 32px;
+        background-color: $title-color;
+        &:before {
+            background-color: $theme-color;
+        }
+        &:hover {
+            background-color: $theme-color;
+        }
+    }
+    .th-btn2 {
+        margin-top: 32px;
+    }
+    &.style2 {
+        border-radius: 0;
+    }
+    &:hover {
+        .box-icon {
+            img {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}
+
+.bg-white {
+    .service-card {
+        background-color: $light-color;
+        .box-number {
+            color: $white-color;
+        }
+    }
+    .swiper-pagination-bullets {
+        .swiper-pagination-bullet {
+            background-color: $light-color;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: $theme-color;
+        }
+    }
+}
+
+/* Service Box ---------------------------------- */
+.service-box {
+    position: relative;
+    z-index: 2;
+    border-radius: 24px;
+    text-align: center;
+    overflow: hidden;
+    .box {
+        &-img {
+            mask-image: url('data:image/svg+xml,<svg width="424" height="255" viewBox="0 0 424 255" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 201V201C132.163 273.004 291.837 273.004 424 201V201V0H0V201Z" fill="%23D9D9D9"/></svg>');
+            mask-size: 100% 100%;
+        }
+        &-content {
+            padding: 112px 12px 32px 12px;
+            background-color: $white-color;
+            margin-top: -90px;
+            mask-image: url('data:image/svg+xml,<svg width="424" height="310" viewBox="0 0 424 310" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0V0C132.85 69.2505 291.15 69.2505 424 0V0V310H0V0Z" fill="%23D9D9D9"/></svg>');
+            mask-size: 100% 100%;
+        }
+        &-title {
+            margin-bottom: 8px;
+        }
+        &-icon {
+            @include equal-size-lineHeight(100px);
+            text-align: center;
+            border-radius: 999px;
+            background-color: $title-color;
+            border: 2px solid $white-color;
+            margin: -52px auto 0 auto;
+            position: relative;
+            z-index: 3;
+        }
+    }
+    .th-btn {
+        margin-top: 24px;
+        border-color: $light-color;
+        color: $title-color;
+        &:hover {
+            &:before {
+                background-color: $theme-color;
+            }
+            color: $white-color;
+            border-color: $theme-color;
+            background-color: $theme-color;
+        }
+    }
+    &:hover {
+        .box-icon {
+            img {
+                transform: rotateY(180deg);
+            }
+        }
+        .box-img {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+/* Service Grid ---------------------------------- */
+.service-grid {
+    position: relative;
+    z-index: 2;
+    border-radius: 16px;
+    padding: 32px;
+    background-color: $white-color;
+    text-align: left;
+    .box {
+        &-number {
+            font-size: 48px;
+            line-height: 1;
+            font-weight: 700;
+            font-family: $title-font;
+            color: #E1E4E5;
+            position: absolute;
+            right: 32px;
+            top: 32px;
+        }
+        &-img {
+            mask-image: url('data:image/svg+xml,<svg width="360" height="220" viewBox="0 0 360 220" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 72C0 66.8071 1.68427 61.7543 4.8 57.6L40.8 9.6C45.3325 3.55666 52.4458 0 60 0H360V220H0V72Z" fill="%23D9D9D9"/></svg>');
+            mask-size: 100% 100%;
+            margin-top: 32px;
+            border-radius: 12px;
+            img {
+                width: 100%;
+            }
+        }
+        &-title {
+            margin-bottom: 8px;
+        }
+        &-icon {
+            margin-bottom: 21px;
+        }
+    }
+    &:hover {
+        .box-icon {
+            img {
+                transform: rotateY(180deg);
+            }
+        }
+        .box-img {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+@include lg {
+    .sec-shape1 {
+        max-width: 80px;
+    }
+}
+
+/* Service Block ---------------------------------- */
+.service-block {
+    --body-bg: #101943;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    &:after,
+    &:before {
+        content: "";
+        box-shadow: inset 25px 25px 0 0 $body-bg;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        border-radius: 16px;
+        top: 38px;
+        right: -25px;
+        z-index: 2;
+        transform: rotate(90deg);
+        z-index: 3;
+    }
+    &:before {
+        top: -25px;
+        right: 38px;
+    }
+    .box {
+        &-img {
+            border-radius: 24px;
+            img {
+                width: 100%;
+            }
+        }
+        &-title {
+            margin-bottom: -0.2em;
+        }
+        &-content {
+            background-color: $white-color;
+            border-radius: 16px;
+            position: relative;
+            z-index: 3;
+            margin: -60px 16px 0 16px;
+            padding: 0 32px 24px 32px;
+            transition: 0.4s ease-in-out;
+        }
+        &-icon {
+            @include equal-size(72px);
+            line-height: 70px;
+            text-align: center;
+            background-color: $title-color;
+            border: 2px solid $white-color;
+            border-radius: 99px;
+            margin: -36px auto -20px auto;
+            transform: translateY(-36px);
+            transition: 0.4s ease-in-out;
+            img {
+                filter: brightness(0) invert(1);
+                transition: 0.4s ease-in-out;
+            }
+        }
+    }
+    .icon-btn {
+        --btn-size: 56px;
+        font-size: 20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 4;
+        &:after {
+            content: '';
+            position: absolute;
+            inset: -8px;
+            background-color: $light-color;
+            border: 8px solid $body-bg;
+            border-radius: 99px;
+            z-index: -1;
+            transition: 0.4s ease-in-out;
+        }
+        &:hover {
+            &:after {
+                background-color: $theme-color;
+            }
+        }
+    }
+    &:hover {
+        .box {
+            &-icon {
+                border-color: $theme-color;
+                background-color: $white-color;
+                img {
+                    transform: rotateY(180deg);
+                    filter: none;
+                }
+            }
+            &-img {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+            &-content {
+                background-color: $theme-color;
+            }
+            &-title {
+                color: $white-color;
+                a:hover {
+                    color: $white-color;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+/* Service Details -------------------------------- */
+.page-title {
+    margin-bottom: 20px;
+}
+
+.page-img {
+    margin-bottom: 48px;
+    overflow: hidden;
+    border-radius: 12px;
+    @include md {
+        margin-bottom: 40px;
+    }
+    img {
+        width: 100%;
+    }
+}
+.page-single {
+    margin-bottom: 30px;
+}
+.service-meta {
+    display: inline-flex;
+    gap: 10px;
+    margin-bottom: 48px;
+    @include md {
+        margin-bottom: 40px;
+    }
+    a, span {
+        line-height: 36px;
+        display: inline-block;
+        color: $white-color;
+        background-color: $title-color;
+        font-size: 17px;
+        padding: 0 18px;
+        border-radius: 30px;
+        i {
+            color: $theme-color;
+            font-size: 16px;
+            margin-right: 5px;
+        }
+        &:hover {
+            background-color: $white-color;
+            color: $title-color;
+            font-weight: 500;
+        }
+    }
+}
+.service-gallery {
+	position: relative;
+	overflow: hidden;
+	border-radius: 12px;
+	&:after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background-color: $title-color;
+		opacity: 0;
+		pointer-events: none;
+		transition: 0.4s ease-in-out;
+	}
+	img {
+		width: 100%;
+		transition: 0.4s ease-in-out;
+        @include xl {
+            height: 290px;
+            object-fit: cover;
+        }
+	}
+	.box-btn {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		font-size: 30px;
+		color: $white-color;
+		line-height: 1;
+		z-index: 3;
+        transform: translate(-50%, 30%);
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.4 ease-in-out;
+        &:hover {
+            color: $theme-color;
+        }
+	}
+	&:hover {
+		&:after {
+			opacity: 0.5;
+		}
+		img {
+            transform: scale(1.1);
+        }
+        .box-btn {
+            visibility: visible;
+            opacity: 1;
+            transform: translate(-50%, -50%);
+        }
+	}
+}

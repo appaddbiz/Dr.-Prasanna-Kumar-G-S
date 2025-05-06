@@ -1,0 +1,147 @@
+//---------------------------------------
+.cta-img1 {
+    img {
+        height: 100%;
+        object-fit: cover;
+        object-position: right center;
+        @include md {
+            width: 100%;
+        }
+    }
+}
+.cta-sec1 {
+    background-size: auto;
+    background-position: center right;
+    background-color: $theme-color;
+    max-width: 1620px;
+    margin: -45px auto auto;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    z-index: 3;
+    @include lg {
+        background-size: cover;
+    }
+    @include md {
+        flex-direction: column;
+        gap: 0;
+    }
+    .sec-title {
+        max-width: 600px;
+    }
+    .call-btn {
+        .box-label {
+            font-weight: 400;
+        }
+        .box-link {
+            font-weight: 600;
+        }
+        a {
+            &:hover {
+                color: $title-color !important;
+            }
+        }
+    }
+    .play-btn {
+        &:before,
+        &:after {
+            background-color: $white-color;
+        }
+        > i {
+            background-color: $white-color;
+            color: $title-color;
+        }
+    }
+    .cta-content {
+        padding: 40px 12px;
+        align-self: center;
+        @include md {
+            text-align: center;
+        }
+    }
+}
+
+// Video Section 1 ----------------------
+.video-content1 {
+    padding: 220px 0;
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+    margin: 0 auto;
+    .sec-title {
+        margin: 40px 0 -0.22em 0;
+    }
+    .play-btn {
+        --icon-size: 80px;
+        font-size: 20px;
+    }
+    @include xl {
+        padding: 160px 0;
+    }
+    @include md {
+        padding: 120px 0;
+    }
+}
+
+// Video Section 2 ----------------------
+.link-btn2 {
+    font-family: $title-font;
+    font-size: 18px;
+    font-weight: 600;
+    color: $white-color;
+    i {
+        @include equal-size-lineHeight(36px);
+        font-size: 18px;
+        text-align: center;
+        border: 1px solid $white-color;
+        border-radius: 8px;
+        color: $theme-color;
+        margin-right: 12px;
+    }
+    &:hover {
+        color: $theme-color;
+    }
+}
+.video-content2 {
+    padding: 160px 0 110px 0;
+    width: 100%;
+    max-width: 840px;
+    text-align: center;
+    margin: 0 auto;
+    .sec-title {
+        margin: 60px 0 26px 0;
+    }
+    .sec-text {
+        margin-bottom: 40px;
+    }
+    .play-btn {
+        --icon-size: 80px;
+        font-size: 20px;
+    }
+    @include md {
+        padding: 100px 0;
+    }
+}
+.video-sec2 {
+    .counter-card-wrap {
+        border-radius: 40px 40px 0 0;
+        @include md {
+            border-radius: 20px 20px 0 0;
+        }
+    }
+}
+
+.video-sec3 {
+    .play-btn {
+        --icon-size: 80px;
+        font-size: 20px;
+    }
+}
+.video-content3 {
+    .sec-title {
+        margin-bottom: 26px;
+        @include lg {
+            margin-top: 50px;
+        }
+    }
+}
