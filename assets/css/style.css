@@ -97,7 +97,7 @@ Version: 1.0.0
 /*------------------- 1.2. Function -------------------*/
 /*------------------- 1.3. Variable-------------------*/
 :root {
-  --theme-color: #f47629;
+  --theme-color: #6cb446;
   --gr-color2: #fd8900;
   --title-color: #1b8ec5;
   --body-color: #666666;
@@ -8128,13 +8128,13 @@ ol.wp-block-rss {
   text-align: center;
   max-width: 1832px;
   margin: 0 auto;
-  border-radius: 24px;
+  /* border-radius: 24px; */
 }
 
 /* Medium Large devices */
 @media (max-width: 1299px) {
   .breadcumb-wrapper {
-    border-radius: 18px;
+    /* border-radius: 18px; */
   }
 }
 
@@ -8157,14 +8157,14 @@ ol.wp-block-rss {
 @media (max-width: 991px) {
   .breadcumb-wrapper {
     padding: 174px 0 90px 0;
-    border-radius: 10px 10px 15px 15px;
+    /* border-radius: 10px 10px 15px 15px; */
   }
 }
 
 /* Extra small devices */
 @media (max-width: 575px) {
   .breadcumb-wrapper {
-    padding: 160px 0 90px 0;
+    padding: 60px 0 40px 0;
   }
   .breadcumb-title {
     font-size: 34px;
@@ -13772,7 +13772,7 @@ span.select2-selection.select2-selection--single:focus {
 
 .contact-media .box-text {
   color: var(--white-color);
-  max-width: 206px;
+  /* max-width: 206px; */
   margin-top: -0.4em;
 }
 
