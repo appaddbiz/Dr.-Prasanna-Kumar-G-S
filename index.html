@@ -27,72 +27,73 @@
     <link
       rel="apple-touch-icon"
       sizes="57x57"
-      href="assets/img/favicons/apple-icon-57x57.png"
+      href="assets/new-imgs/orthopedic.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="60x60"
-      href="assets/img/favicons/apple-icon-60x60.png"
+      href="assets/new-imgs/orthopedic.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="72x72"
-      href="assets/img/favicons/apple-icon-72x72.png"
+      href="assets/new-imgs/orthopedic.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="76x76"
-      href="assets/img/favicons/apple-icon-76x76.png"
+      href="assets/new-imgs/orthopedic.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="114x114"
-      href="assets/img/favicons/apple-icon-114x114.png"
+      href="assets/new-imgs/orthopedic.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="120x120"
-      href="assets/img/favicons/apple-icon-120x120.png"
+      href="assets/new-imgs/orthopedic.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="144x144"
-      href="assets/img/favicons/apple-icon-144x144.png"
+      href="assets/new-imgs/orthopedic.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="152x152"
-      href="assets/img/favicons/apple-icon-152x152.png"
+      href="assets/new-imgs/orthopedic.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/img/favicons/apple-icon-180x180.png"
+      href="assets/new-imgs/orthopedic.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="assets/img/favicons/android-icon-192x192.png"
+      href="assets/new-imgs/orthopedic.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/img/favicons/favicon-32x32.png"
+      href="assets/new-imgs/orthopedic.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="96x96"
-      href="assets/img/favicons/favicon-96x96.png"
+      href="assets/new-imgs/orthopedic.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="assets/img/favicons/favicon-16x16.png"
+      href="assets/new-imgs/orthopedic.png"
     />
+
     <link rel="manifest" href="assets/img/favicons/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta
@@ -148,6 +149,18 @@
           display: none;
         }
       }
+
+      @media (max-width: 768px) {
+        .desk-banner {
+          display: none;
+        }
+      }
+
+      @media (min-width: 769px) {
+        .mobile-banner {
+          display: none;
+        }
+      }
     </style>
   </head>
 
@@ -159,12 +172,36 @@
       <div class="th-menu-area text-center">
         <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
         <div class="mobile-logo">
-          <a href="home-handyman.html"
-            ><img src="assets/img/logo-tertiary-black.svg" alt="Rakar"
+          <a href="#"
+            ><img
+              src="assets/new-imgs/logo.jpeg"
+              style="padding: 10px; border-radius: 10px"
+              alt="Rakar"
           /></a>
         </div>
         <div class="th-mobile-menu">
           <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Doctor</a></li>
+            <li class="menu-item-has-children">
+              <a href="#">Orthopedic Surgeries</a>
+              <ul class="sub-menu">
+                <li><a href="#">Knee Replacements</a></li>
+                <li><a href="#">HIP Replacement</a></li>
+                <li><a href="#">Shoulder Replacement</a></li>
+                <li><a href="#">Foot Surgery & Treatments</a></li>
+                <li><a href="#">Elbow Surgery & Treatments</a></li>
+                <li><a href="#">Ankle Surgery & Treatments</a></li>
+                <li><a href="#">Hand Surgery & Treatments</a></li>
+                <li><a href="#">Wrist Surgery & Treatments</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Orthopedic Treatments</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <!-- <ul>
             <li class="">
               <a href="#">Home</a>
             </li>
@@ -192,43 +229,52 @@
             <li>
               <a href="#">Contact Us</a>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </div>
     <!--==============================
 	Header Area
 ==============================-->
-    <header class="th-header header-layout5">
+    <header class="th-header header-layout3" style="background-color: #1b8fca">
       <div class="header-top">
         <div class="container">
-          <div
-            class="row justify-content-center justify-content-lg-between align-items-center gy-2"
-          >
-            <div class="col-auto d-none d-lg-block">
-              <div class="header-links">
-                <ul>
-                  <li>
-                    <i class="fas fa-location-dot"></i>
-                    <a href="https://maps.app.goo.gl/DCdUHCasLJNgHv7x6"
-                      >Manipal Hospital Bengaluru, Karnataka</a
-                    >
-                  </li>
-                  <li>
-                    <i class="fas fa-clock"></i> Monday to Saturday: 9.00 AM -
-                    5.00 PM
-                  </li>
-                </ul>
+          <div class="topbar-wrapper">
+            <div
+              class="row justify-content-center justify-content-lg-between align-items-center gy-2"
+            >
+              <div class="col-auto d-none d-lg-block">
+                <div class="header-links">
+                  <ul>
+                    <li>
+                      <i class="fas fa-location-dot text-white"></i>
+                      <a href="https://maps.app.goo.gl/DCdUHCasLJNgHv7x6"
+                        >Manipal Hospital Bengaluru, Karnataka</a
+                      >
+                    </li>
+                    <li>
+                      <i class="fas fa-clock text-white"></i> Mon-Sat: 9.00 AM -
+                      5.00 PM
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div class="col-auto">
-              <div class="header-links">
-                <ul>
-                  <li>
-                    <i class="fas fa-phone"></i>
-                    <a href="#">Book An Appointment</a>
-                  </li>
-                </ul>
+              <div class="col-auto">
+                <div class="header-links">
+                  <ul style="display: flex">
+                    <li style="font-weight: 700" class="d-none d-lg-block">
+                      <i class="fas fa-phone" style="font-size: 18px"></i>
+                      <a href="tel:6360777121">+91 6360777121</a>
+                    </li>
+                    <li style="font-weight: 700">
+                      <i
+                        class="fas fa-calendar-days"
+                        style="font-size: 18px"
+                      ></i>
+                      <a href="#">Book An Appointment</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -238,57 +284,129 @@
         <!-- Main Menu Area -->
         <div class="container">
           <div class="menu-area">
-            <div class="row align-items-start justify-content-between">
-              <div class="col-auto d-none d-lg-block">
+            <div class="row align-items-center justify-content-between">
+              <div class="col-auto">
                 <div class="header-logo">
-                  <a href="home-handyman.html"
-                    ><img src="assets/img/logo-tertiary.svg" alt="Rakar"
+                  <a href="#"
+                    ><img
+                      src="assets/new-imgs/logo.jpeg"
+                      style="height: 75px"
+                      alt="Rakar"
                   /></a>
                 </div>
               </div>
-              <div class="col">
-                <div class="menu-wrap">
-                  <div class="header-logo d-block d-lg-none">
-                    <a href="home-handyman.html"
-                      ><img
-                        src="assets/img/logo-tertiary-black.svg"
-                        alt="Rakar"
-                    /></a>
-                  </div>
-                  <nav class="main-menu d-none d-lg-inline-block">
-                    <ul>
-                      <li class="">
-                        <a href="/">Home</a>
-                      </li>
-                      <li><a href="about.html">About Doctor</a></li>
-                      <li><a href="about.html">Orthopedic Surgery</a></li>
-                      <li class="menu-item-has-children">
-                        <a href="#">Orthopedic Treatments</a>
-                        <ul class="sub-menu">
-                          <li><a href="#">Our Services</a></li>
-                          <li>
-                            <a href="#">Service Details</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Gallery </a></li>
-                      <li><a href="#">Testimonials </a></li>
-                      <li><a href="contact.html">Contact US</a></li>
-                    </ul>
-                  </nav>
-                  <button
-                    type="button"
-                    class="th-menu-toggle d-block d-lg-none"
-                  >
-                    <i class="far fa-bars"></i>
-                  </button>
-                </div>
+              <div class="col-auto">
+                <nav class="main-menu d-none d-lg-inline-block">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Doctor</a></li>
+                    <li class="menu-item-has-children">
+                      <a href="#">Orthopedic Surgeries</a>
+                      <ul class="sub-menu">
+                        <li><a href="#">Knee Replacements</a></li>
+                        <li><a href="#">HIP Replacement</a></li>
+                        <li><a href="#">Shoulder Replacement</a></li>
+                        <li><a href="#">Foot Surgery & Treatments</a></li>
+                        <li><a href="#">Elbow Surgery & Treatments</a></li>
+                        <li><a href="#">Ankle Surgery & Treatments</a></li>
+                        <li><a href="#">Hand Surgery & Treatments</a></li>
+                        <li><a href="#">Wrist Surgery & Treatments</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Orthopedic Treatments</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+
+                  <!-- <ul>
+                    <li class="menu-item-has-children">
+                      <a href="#">Home</a>
+                      <ul class="sub-menu">
+                        <li><a href="#">Home Handyman</a></li>
+                        <li>
+                          <a href="home-office-repair.html"
+                            >Home Office Repair</a
+                          >
+                        </li>
+                        <li>
+                          <a href="home-electrician.html">Home Electrician</a>
+                        </li>
+                        <li>
+                          <a href="home-air-condition.html"
+                            >Home Air Condition</a
+                          >
+                        </li>
+                        <li>
+                          <a href="home-carpentry.html">Home Carpentry</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="#">About Us</a></li>
+                    <li class="menu-item-has-children">
+                      <a href="#">Our Services</a>
+                      <ul class="sub-menu">
+                        <li><a href="service.html">Our Services</a></li>
+                        <li>
+                          <a href="service-details.html">Service Details</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                      <a href="#">Pages</a>
+                      <ul class="sub-menu">
+                        <li class="menu-item-has-children">
+                          <a href="#">Shop</a>
+                          <ul class="sub-menu">
+                            <li><a href="shop.html">Shop</a></li>
+                            <li>
+                              <a href="shop-details.html">Shop Details</a>
+                            </li>
+                            <li><a href="cart.html">Cart Page</a></li>
+                            <li><a href="checkout.html">Checkout</a></li>
+                            <li><a href="wishlist.html">Wishlist</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="team-details.html">Team Details</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="pricing.html">Price Plan</a></li>
+                        <li><a href="testimonial.html">Testimonials</a></li>
+                        <li><a href="faq.html">Faq Page</a></li>
+                        <li><a href="error.html">Error Page</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                      <a href="#">Blog</a>
+                      <ul class="sub-menu">
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="blog-details.html">Blog Details</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                      <a href="#">Project</a>
+                      <ul class="sub-menu">
+                        <li><a href="project.html">Project</a></li>
+                        <li>
+                          <a href="project-details.html">Project Details</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul> -->
+                </nav>
+                <button type="button" class="th-menu-toggle d-block d-lg-none">
+                  <i class="far fa-bars"></i>
+                </button>
               </div>
               <!-- <div class="col-auto d-none d-xl-block">
                 <div class="header-button">
-                  <a href="contact.html" class="th-btn rounded-12 style3"
-                    >Get A Quote<i class="fas fa-arrow-right ms-2"></i
-                  ></a>
+                  <a class="header-call" href="tel:+0001234567"
+                    ><span class="icon-btn"
+                      ><i class="fas fa-phone-volume"></i
+                    ></span>
+                    (000) 123 - 4567</a
+                  >
                 </div>
               </div> -->
             </div>
@@ -300,209 +418,124 @@
     <!--==============================
 Hero Area
 ==============================-->
-    <div class="th-hero-wrapper hero-5 slider-area" id="hero">
-      <div
-        class="swiper th-slider"
-        id="heroSlide5"
-        data-slider-options='{"effect":"fade","autoHeight":true}'
-      >
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div
-              class="hero-inner"
-              data-bg-src="https://backgroundimages.withfloats.com/actual/5bc6b6ac968e35000119cd30.jpg"
-            >
-              <div class="container">
-                <div class="hero-style5">
-                  <span
-                    class="sub-title2"
-                    data-ani="slideinup"
-                    data-ani-delay="0.1s"
-                    ><span class="line"></span
-                    ><img
-                      src="assets/img/hero/battery_icon.svg"
-                      alt="shape"
-                    />Welcome To Dr. Prasanna Kumar G S</span
-                  >
-                  <h1 class="hero-title">
-                    <span
-                      class="title1"
-                      data-ani="slideinup"
-                      data-ani-delay="0.2s"
-                      >We are expert in</span
-                    >
-                    <span
-                      class="title2"
-                      data-ani="slideinup"
-                      data-ani-delay="0.4s"
-                      ><span class="text-theme">Orthopedic and </span> Joint
-                      Replacement</span
-                    >
-                  </h1>
-                  <!-- <p
-                    class="hero-text"
-                    data-ani="slideinup"
-                    data-ani-delay="0.6s"
-                  >
-                    Experienced Orthopedic and Joint Replacement Surgeon
-                    specializing in advanced treatments for joint pain,
-                    arthritis, fractures, and mobility restoration
-                  </p> -->
-                  <!-- <div
-                      class="btn-group"
-                      data-ani="slideinup"
-                      data-ani-delay="0.8s"
-                    >
-                      <a href="service.html" class="th-btn rounded-12 style2"
-                        >Our All Services<i class="fas fa-arrow-right ms-2"></i
-                      ></a>
-                      <a
-                        href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
-                        class="popup-video video-btn"
-                      >
-                        <div class="play-btn">
-                          <i class="fas fa-play"></i>
-                        </div>
-                        Play Video
-                      </a>
-                    </div> -->
-                </div>
-              </div>
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      style="max-width: 1800px; margin: 0 auto"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div>
+            <div class="desk-banner">
+              <img
+                src="assets/new-imgs/Dr prasanna - DB-02.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="mobile-banner">
+              <img
+                src="assets/new-imgs/Dr prasanna - DB-02.webp"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
           </div>
-          <!-- <div class="swiper-slide">
-            <div
-              class="hero-inner"
-              data-bg-src="assets/img/hero/hero_bg_5_2.jpg"
-            >
-              <div class="container">
-                <div class="hero-style5">
-                  <span
-                    class="sub-title2"
-                    data-ani="slideinup"
-                    data-ani-delay="0.1s"
-                    ><span class="line"></span
-                    ><img
-                      src="assets/img/hero/battery_icon.svg"
-                      alt="shape"
-                    />Welcome To Rakar</span
-                  >
-                  <h1 class="hero-title">
-                    <span
-                      class="title1"
-                      data-ani="slideinup"
-                      data-ani-delay="0.2s"
-                      >We are expert in</span
-                    >
-                    <span
-                      class="title2"
-                      data-ani="slideinup"
-                      data-ani-delay="0.4s"
-                      ><span class="text-theme">Electrical</span> Services</span
-                    >
-                  </h1>
-                  <p
-                    class="hero-text"
-                    data-ani="slideinup"
-                    data-ani-delay="0.6s"
-                  >
-                    We believe in providing top quality workman and are so
-                    confident in our level of service that we back it up
-                  </p>
-                  <div
-                    class="btn-group"
-                    data-ani="slideinup"
-                    data-ani-delay="0.8s"
-                  >
-                    <a href="service.html" class="th-btn rounded-12 style2"
-                      >Our All Services<i class="fas fa-arrow-right ms-2"></i
-                    ></a>
-                    <a
-                      href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
-                      class="popup-video video-btn"
-                    >
-                      <div class="play-btn">
-                        <i class="fas fa-play"></i>
-                      </div>
-                      Play Video
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div
-              class="hero-inner"
-              data-bg-src="assets/img/hero/hero_bg_5_3.jpg"
-            >
-              <div class="container">
-                <div class="hero-style5">
-                  <span
-                    class="sub-title2"
-                    data-ani="slideinup"
-                    data-ani-delay="0.1s"
-                    ><span class="line"></span
-                    ><img
-                      src="assets/img/hero/battery_icon.svg"
-                      alt="shape"
-                    />Welcome To Rakar</span
-                  >
-                  <h1 class="hero-title">
-                    <span
-                      class="title1"
-                      data-ani="slideinup"
-                      data-ani-delay="0.2s"
-                      >We are expert in</span
-                    >
-                    <span
-                      class="title2"
-                      data-ani="slideinup"
-                      data-ani-delay="0.4s"
-                      ><span class="text-theme">Electrical</span> Services</span
-                    >
-                  </h1>
-                  <p
-                    class="hero-text"
-                    data-ani="slideinup"
-                    data-ani-delay="0.6s"
-                  >
-                    We believe in providing top quality workman and are so
-                    confident in our level of service that we back it up
-                  </p>
-                  <div
-                    class="btn-group"
-                    data-ani="slideinup"
-                    data-ani-delay="0.8s"
-                  >
-                    <a href="service.html" class="th-btn rounded-12 style2"
-                      >Our All Services<i class="fas fa-arrow-right ms-2"></i
-                    ></a>
-                    <a
-                      href="https://www.youtube.com/watch?v=_sI_Ps7JSEk"
-                      class="popup-video video-btn"
-                    >
-                      <div class="play-btn">
-                        <i class="fas fa-play"></i>
-                      </div>
-                      Play Video
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
-        <div class="slider-pagination"></div>
+        <div class="carousel-item">
+          <div>
+            <div class="desk-banner">
+              <img
+                src="assets/new-imgs/Dr prasanna - DB-03.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="mobile-banner">
+              <img
+                src="assets/new-imgs/Dr prasanna - DB-03.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div>
+            <div class="desk-banner">
+              <img
+                src="assets/new-imgs/b-4.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="mobile-banner">
+              <img
+                src="assets/new-imgs/b-4.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div>
+            <div class="desk-banner">
+              <img
+                src="assets/new-imgs/b-5.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="mobile-banner">
+              <img
+                src="assets/new-imgs/b-5.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div>
+            <div class="desk-banner">
+              <img
+                src="assets/new-imgs/b-6.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="mobile-banner">
+              <img
+                src="assets/new-imgs/b-6.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="icon-box">
-        <button data-slider-prev="#heroSlide5" class="slider-arrow default">
-          <i class="far fa-arrow-left"></i>
-        </button>
-        <button data-slider-next="#heroSlide5" class="slider-arrow default">
-          <i class="far fa-arrow-right"></i>
-        </button>
-      </div>
+      <button
+        class="carousel-control-prev"
+        style="background-color: transparent; border: 0px"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        style="background-color: transparent; border: 0px"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
     <!--======== / Hero Section ========-->
     <!--==============================
@@ -594,7 +627,11 @@ Brand Area
 About Area  
 ==============================-->
 
-    <div class="overflow-hidden space" id="about-sec">
+    <div
+      class="overflow-hidden space"
+      id="about-sec"
+      style="background-color: #f7f7f7"
+    >
       <div class="container">
         <div class="row flex-row-reverse text-center">
           <div class="col-xl-6 mb-35 mb-xl-0">
@@ -614,18 +651,11 @@ About Area
             </div>
             <div class="img-box5">
               <div class="img1">
-                <img
-                  src="assets/doctor-images/Adobe Express - file (5) (1).png"
-                  alt="About"
-                />
+                <img src="assets/new-imgs/Doctor-prasanna.webp" alt="About" />
               </div>
               <div class="customer-box customer-box-mobile">
                 <div class="box-img">
-                  <img
-                    src="assets/flat-icons/doctor (7).png"
-                    style="width: 100px"
-                    alt="About"
-                  />
+                  <img src="assets/new-imgs/examination.png" alt="About" />
                 </div>
                 <div class="media-body">
                   <h4 class="box-title">
@@ -718,7 +748,7 @@ About Area
                 </div>
               </div>
               <div class="btn-group justify-content-center">
-                <a href="about.html" class="th-btn style4 rounded-10"
+                <a href="#" class="th-btn style4 rounded-10"
                   >View Profile<i class="far fa-arrow-right ms-2"></i
                 ></a>
                 <div class="call-btn customer-box-mobile">
@@ -739,10 +769,52 @@ About Area
       </div>
     </div>
 
+    <div class="">
+      <div class="th-container">
+        <div class="counter-card-wrap style4" style="border-radius: 0px">
+          <div class="counter-card">
+            <div class="media-body">
+              <h2 class="box-number text-white">
+                <span class="counter-number">5000</span>+
+              </h2>
+              <p class="box-text text-white">Successful Surgeries</p>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="counter-card">
+            <div class="media-body">
+              <h2 class="box-number text-white">
+                <span class="counter-number">3000</span>+
+              </h2>
+              <p class="box-text text-white">Happy Patients</p>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="counter-card">
+            <div class="media-body">
+              <h2 class="box-number text-white">
+                <span class="counter-number">12</span>+
+              </h2>
+              <p class="box-text text-white">Years Experience</p>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="counter-card">
+            <div class="media-body">
+              <h2 class="box-number text-white">
+                <span class="counter-number">50</span>+
+              </h2>
+              <p class="box-text text-white">Awards</p>
+            </div>
+          </div>
+          <div class="divider"></div>
+        </div>
+      </div>
+    </div>
     <section
       class="overflow-hidden space"
       id="service-sec"
-      style="background-color: #e1e4e5"
+      style="background-color: #f7f7f7"
     >
       <!-- <div class="shape-mockup spin" data-top="0%" data-right="0%">
         <img src="assets/img/shape/lines_1.png" alt="shape" />
@@ -751,7 +823,10 @@ About Area
         <div class="row justify-content-center">
           <div class="col-xl-8 col-md-10">
             <div class="title-area text-center">
-              <span class="sub-title">Our Orthopedic Surgeries</span>
+              <!-- <span class="sub-title">Our Orthopedic Surgeries</span> -->
+              <span class="sub-title"
+                ><span class="line"></span>Our Orthopedic Surgeries</span
+              >
               <h2 class="sec-title">
                 Precision. Recovery. Strength – Restoring Mobility with Care
               </h2>
@@ -763,7 +838,11 @@ About Area
             <div class="service-card">
               <div class="box-number">01</div>
               <div class="box-icon">
-                <img src="assets/img/icon/service_card_1.svg" alt="Icon" />
+                <img
+                  src="assets/new-imgs/bone.png"
+                  style="height: 50px"
+                  alt="Icon"
+                />
               </div>
               <h3 class="box-title">
                 <a href="#">Knee Replacements</a>
@@ -782,10 +861,14 @@ About Area
             <div class="service-card">
               <div class="box-number">02</div>
               <div class="box-icon">
-                <img src="assets/img/icon/service_card_2.svg" alt="Icon" />
+                <img
+                  src="assets/new-imgs/hip-replacement.png"
+                  style="height: 50px"
+                  alt="Icon"
+                />
               </div>
               <h3 class="box-title">
-                <a href="#">HIP Replacement</a>
+                <a href="#">Hip Replacement</a>
               </h3>
               <p class="box-text">
                 Restore hip function with advanced techniques for less
@@ -801,7 +884,11 @@ About Area
             <div class="service-card">
               <div class="box-number">03</div>
               <div class="box-icon">
-                <img src="assets/img/icon/service_card_3.svg" alt="Icon" />
+                <img
+                  src="assets/new-imgs/shoulder.png"
+                  alt="Icon"
+                  style="height: 50px"
+                />
               </div>
               <h3 class="box-title">
                 <a style="font-size: 23px" href="#">Shoulder Replacement</a>
@@ -820,7 +907,11 @@ About Area
             <div class="service-card">
               <div class="box-number">04</div>
               <div class="box-icon">
-                <img src="assets/img/icon/service_card_4.svg" alt="Icon" />
+                <img
+                  src="assets/new-imgs/surgery.png"
+                  alt="Icon"
+                  style="height: 50px"
+                />
               </div>
               <h3 class="box-title">
                 <a style="font-size: 23px" href="#"
@@ -840,7 +931,11 @@ About Area
             <div class="service-card">
               <div class="box-number">05</div>
               <div class="box-icon">
-                <img src="assets/img/icon/service_card_5.svg" alt="Icon" />
+                <img
+                  src="assets/new-imgs/elbow.png"
+                  alt="Icon"
+                  style="height: 50px"
+                />
               </div>
               <h3 class="box-title">
                 <a href="#">Elbow Surgery & Treatments</a>
@@ -859,7 +954,11 @@ About Area
             <div class="service-card">
               <div class="box-number">06</div>
               <div class="box-icon">
-                <img src="assets/img/icon/service_card_6.svg" alt="Icon" />
+                <img
+                  src="assets/new-imgs/ankle.png"
+                  alt="Icon"
+                  style="height: 50px"
+                />
               </div>
               <h3 class="box-title">
                 <a href="#">Ankle Surgery & Treatments</a>
@@ -878,7 +977,11 @@ About Area
             <div class="service-card">
               <div class="box-number">07</div>
               <div class="box-icon">
-                <img src="assets/img/icon/service_card_7.svg" alt="Icon" />
+                <img
+                  src="assets/new-imgs/surgery (1).png"
+                  alt="Icon"
+                  style="height: 50px"
+                />
               </div>
               <h3 class="box-title">
                 <a href="#">Hand Surgery & Treatments</a>
@@ -897,7 +1000,11 @@ About Area
             <div class="service-card">
               <div class="box-number">08</div>
               <div class="box-icon">
-                <img src="assets/img/icon/service_card_8.svg" alt="Icon" />
+                <img
+                  src="assets/new-imgs/wrist.png"
+                  alt="Icon"
+                  style="height: 53px"
+                />
               </div>
               <h3 class="box-title">
                 <a href="#">Wrist Surgery & Treatments</a>
@@ -1022,13 +1129,13 @@ Service Area
     <section
       class="overflow-hidden space"
       id="service-sec"
-      style="background-color: #101840"
+      style="background-color: #1b8fca"
     >
       <div class="container">
         <div class="row justify-content-between align-items-center">
           <div class="col-md-7 col-xl-6 text-center text-md-start">
             <div class="title-area">
-              <span class="sub-title shape-white"
+              <span class="sub-title shape-white" style="color: #4fe000"
                 ><span class="line"></span>Our Orthopedic Treatments</span
               >
               <h2 class="sec-title text-white">
@@ -1061,7 +1168,11 @@ Service Area
                     />
                   </div>
                   <div class="box-icon">
-                    <img src="assets/img/icon/service_box_1.svg" alt="Icon" />
+                    <img
+                      src="assets/new-imgs/orthopedics.png"
+                      style="height: 55px"
+                      alt="Icon"
+                    />
                   </div>
                   <div class="box-content">
                     <h3 class="box-title">
@@ -1087,7 +1198,11 @@ Service Area
                     />
                   </div>
                   <div class="box-icon">
-                    <img src="assets/img/icon/service_box_2.svg" alt="Icon" />
+                    <img
+                      src="assets/new-imgs/arthritis.png"
+                      style="height: 55px"
+                      alt="Icon"
+                    />
                   </div>
                   <div class="box-content">
                     <h3 class="box-title">
@@ -1113,7 +1228,11 @@ Service Area
                     />
                   </div>
                   <div class="box-icon">
-                    <img src="assets/img/icon/service_box_3.svg" alt="Icon" />
+                    <img
+                      src="assets/new-imgs/biopsy (1).png"
+                      style="height: 55px"
+                      alt="Icon"
+                    />
                   </div>
                   <div class="box-content">
                     <h3 class="box-title">
@@ -1139,7 +1258,11 @@ Service Area
                     />
                   </div>
                   <div class="box-icon">
-                    <img src="assets/img/icon/service_box_1.svg" alt="Icon" />
+                    <img
+                      src="assets/new-imgs/injection.png"
+                      style="height: 55px"
+                      alt="Icon"
+                    />
                   </div>
                   <div class="box-content">
                     <h3 class="box-title">
@@ -1165,7 +1288,7 @@ Service Area
                     />
                   </div>
                   <div class="box-icon">
-                    <img src="assets/img/icon/service_box_2.svg" alt="Icon" />
+                    <img src="assets/new-imgs/shoulder (1).png" alt="Icon" />
                   </div>
                   <div class="box-content">
                     <h3 class="box-title">
@@ -1235,7 +1358,7 @@ Feature Area
               <div class="why-feature">
                 <div class="box-number">01</div>
                 <div class="box-icon">
-                  <img src="assets/img/icon/why_feature_1.svg" alt="" />
+                  <img src="assets/new-imgs/orthopedic.png" alt="" />
                 </div>
                 <h3 class="box-title">Skilled Orthopedic Surgeon</h3>
                 <p class="box-text">
@@ -1247,7 +1370,11 @@ Feature Area
               <div class="why-feature">
                 <div class="box-number">02</div>
                 <div class="box-icon">
-                  <img src="assets/img/icon/why_feature_2.svg" alt="" />
+                  <img
+                    src="assets/new-imgs/robotic-surgery.png"
+                    style="height: 60px"
+                    alt=""
+                  />
                 </div>
                 <h3 class="box-title">Advanced Surgical Techniques</h3>
                 <p class="box-text">
@@ -1258,7 +1385,11 @@ Feature Area
               <div class="why-feature">
                 <div class="box-number">03</div>
                 <div class="box-icon">
-                  <img src="assets/img/icon/why_feature_3.svg" alt="" />
+                  <img
+                    src="assets/new-imgs/patient.png"
+                    style="height: 60px"
+                    alt=""
+                  />
                 </div>
                 <h3 class="box-title">Patient-Centered Approach</h3>
                 <p class="box-text">
@@ -1270,7 +1401,10 @@ Feature Area
           </div>
           <div class="col-xl-4 align-self-end d-none d-xl-block">
             <div class="why-img2">
-              <img src="assets/service-images/Orthopedic-bg.avif" alt="Why" />
+              <img
+                src="assets/new-imgs/Adobe Express - file (20).jpg"
+                alt="Why"
+              />
             </div>
           </div>
           <div class="col-xl-4 col-md-6">
@@ -1278,7 +1412,7 @@ Feature Area
               <div class="why-feature">
                 <div class="box-number">04</div>
                 <div class="box-icon">
-                  <img src="assets/img/icon/why_feature_4.svg" alt="" />
+                  <img src="assets/new-imgs/success.png" alt="" />
                 </div>
                 <h3 class="box-title">High Success Rates</h3>
                 <p class="box-text">
@@ -1289,7 +1423,11 @@ Feature Area
               <div class="why-feature">
                 <div class="box-number">05</div>
                 <div class="box-icon">
-                  <img src="assets/img/icon/why_feature_5.svg" alt="" />
+                  <img
+                    src="assets/new-imgs/physical-therapy.png"
+                    style="height: 60px"
+                    alt=""
+                  />
                 </div>
                 <h3 class="box-title">Postoperative Care</h3>
                 <p class="box-text">
@@ -1300,7 +1438,7 @@ Feature Area
               <div class="why-feature">
                 <div class="box-number">06</div>
                 <div class="box-icon">
-                  <img src="assets/img/icon/why_feature_6.svg" alt="" />
+                  <img src="assets/new-imgs/package.png" alt="" />
                 </div>
                 <h3 class="box-title">Affordable Packages</h3>
                 <p class="box-text">
@@ -1315,65 +1453,14 @@ Feature Area
         <!--==============================
     Counter Area  
     ==============================-->
-        <div class="">
-          <div class="container">
-            <div class="counter-card-wrap style4">
-              <div class="counter-card">
-                <div class="media-body">
-                  <h2 class="box-number text-white">
-                    <span class="counter-number">5000</span>+
-                  </h2>
-                  <p class="box-text text-white">Successful Surgeries</p>
-                </div>
-              </div>
-              <div class="divider"></div>
-              <div class="counter-card">
-                <div class="media-body">
-                  <h2 class="box-number text-white">
-                    <span class="counter-number">3000</span>+
-                  </h2>
-                  <p class="box-text text-white">Happy Patients</p>
-                </div>
-              </div>
-              <div class="divider"></div>
-              <div class="counter-card">
-                <div class="media-body">
-                  <h2 class="box-number text-white">
-                    <span class="counter-number">12</span>+
-                  </h2>
-                  <p class="box-text text-white">Years Experience</p>
-                </div>
-              </div>
-              <div class="divider"></div>
-              <div class="counter-card">
-                <div class="media-body">
-                  <h2 class="box-number text-white">
-                    <span class="counter-number">50</span>+
-                  </h2>
-                  <p class="box-text text-white">Medical Excellence Awards</p>
-                </div>
-              </div>
-              <div class="divider"></div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
     <!--==============================
 Process Area  
 ==============================-->
-    <section
-      class="space"
-      id="process-sec"
-      style="
-        position: relative;
-        background-image: url('assets/bg-images/work-proceess-bg.avif');
-        background-size: cover;
-        background-position: center;
-      "
-    >
-      <div
+    <section class="space" id="process-sec" style="background-color: #1b8fca">
+      <!-- <div
         style="
           position: absolute;
           top: 0;
@@ -1383,12 +1470,12 @@ Process Area
           background-color: rgba(0, 0, 0, 0.6);
           z-index: 999;
         "
-      ></div>
-      <div class="container" style="z-index: 999; position: relative">
+      ></div> -->
+      <div class="container">
         <div class="row justify-content-center">
           <div class="col-xl-6 col-md-8">
             <div class="title-area text-center">
-              <span class="sub-title2">
+              <span class="sub-title2" style="color: #4fe000">
                 <img
                   src="assets/img/theme-img/title_icon5_white.svg"
                   alt="Icon"
@@ -1472,14 +1559,9 @@ Gallery Area
           <div class="col-xl-3 col-md-6 filter-item">
             <div class="gallery-grid">
               <div class="box-img">
-                <img
-                  src="https://img.freepik.com/free-photo/healthcare-concept-clinic_23-2151117902.jpg"
-                  alt="gallery image"
-                />
+                <img src="assets/new-imgs/g11.jpg" alt="gallery image" />
               </div>
-              <a
-                href="https://img.freepik.com/free-photo/healthcare-concept-clinic_23-2151117902.jpg"
-                class="icon-btn popup-image"
+              <a href="assets/new-imgs/g11.jpg" class="icon-btn popup-image"
                 ><i class="fal fa-plus"></i
               ></a>
             </div>
@@ -1487,14 +1569,29 @@ Gallery Area
           <div class="col-md-6 filter-item">
             <div class="gallery-grid">
               <div class="box-img">
-                <img
-                  src="assets/gallery-images/doctor-taking-care-afro-american-child_23-2151159929.jpg"
-                  alt="gallery image"
-                />
+                <img src="assets/new-imgs/g12.jpg" alt="gallery image" />
               </div>
-              <a
-                href="assets/gallery-images/doctor-taking-care-afro-american-child_23-2151159929.jpg"
-                class="icon-btn popup-image"
+              <a href="assets/new-imgs/g12.jpg" class="icon-btn popup-image"
+                ><i class="fal fa-plus"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 filter-item">
+            <div class="gallery-grid">
+              <div class="box-img">
+                <img src="assets/new-imgs/g13.jpg" alt="gallery image" />
+              </div>
+              <a href="assets/new-imgs/g13.jpg" class="icon-btn popup-image"
+                ><i class="fal fa-plus"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 filter-item">
+            <div class="gallery-grid">
+              <div class="box-img">
+                <img src="assets/new-imgs/g14.jpg" alt="gallery image" />
+              </div>
+              <a href="assets/new-imgs/g14.jpg" class="icon-btn popup-image"
                 ><i class="fal fa-plus"></i
               ></a>
             </div>
@@ -1503,43 +1600,12 @@ Gallery Area
             <div class="gallery-grid">
               <div class="box-img">
                 <img
-                  src="https://img.freepik.com/free-photo/medium-shot-nurse-taking-care-patient_23-2149484040.jpg"
+                  src="assets/new-imgs/g15.jpg"
                   alt="gallery image"
+                  style="height: 230px"
                 />
               </div>
-              <a
-                href="https://img.freepik.com/free-photo/medium-shot-nurse-taking-care-patient_23-2149484040.jpg"
-                class="icon-btn popup-image"
-                ><i class="fal fa-plus"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-6 filter-item">
-            <div class="gallery-grid">
-              <div class="box-img">
-                <img
-                  src="https://img.freepik.com/free-photo/explaining-x-ray-results-patient_1098-13317.jpg"
-                  alt="gallery image"
-                />
-              </div>
-              <a
-                href="https://img.freepik.com/free-photo/explaining-x-ray-results-patient_1098-13317.jpg"
-                class="icon-btn popup-image"
-                ><i class="fal fa-plus"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-6 filter-item">
-            <div class="gallery-grid">
-              <div class="box-img">
-                <img
-                  src="assets/gallery-images/consult.avif"
-                  alt="gallery image"
-                />
-              </div>
-              <a
-                href="assets/gallery-images/consult.avif"
-                class="icon-btn popup-image"
+              <a href="assets/new-imgs/g15.jpg" class="icon-btn popup-image"
                 ><i class="fal fa-plus"></i
               ></a>
             </div>
@@ -1952,10 +2018,7 @@ Blog Area
                   >
                 </div>
                 <h3 class="box-title">
-                  <a href="#"
-                    >Understanding the Difference Between Arthritis &
-                    Osteoporosis</a
-                  >
+                  <a href="#"> Difference Between Arthritis & Osteoporosis</a>
                 </h3>
               </div>
             </div>
@@ -2015,19 +2078,22 @@ Blog Area
       <div class="widget-area">
         <div class="container">
           <div class="row justify-content-between">
-            <div class="col-md-6 col-xl-4">
+            <div class="col-md-6 col-xl-3">
               <div class="widget footer-widget">
                 <div class="">
                   <div class="about-logo">
-                    <a href="home-handyman.html"
-                      ><img src="assets/img/logo-tertiary.svg" alt="Rakar"
+                    <a href="#"
+                      ><img
+                        src="assets/new-imgs/logo.jpeg"
+                        style="height: 100px; border-radius: 10px"
+                        alt="Rakar"
                     /></a>
                   </div>
-                  <p class="about-text">
+                  <!-- <p class="about-text">
                     Dr. Prasanna Kumar G S, Orthopedic surgeon with 13 years'
                     experience, practices at Manipal Hospitals, Yeshwanthpur;
                     MBBS, MS, DNB.
-                  </p>
+                  </p> -->
                   <p class="about-text">
                     <strong> Address :</strong>
                     <a style="color: white" href="tel:+916360777121"
@@ -2056,7 +2122,7 @@ Blog Area
             <div class="col-md-6 col-xl-2">
               <div class="widget widget_nav_menu footer-widget">
                 <h3 class="widget_title">
-                  <img src="assets/img/icon/footer_title5.svg" alt="icon" />
+                  <!-- <img src="assets/img/icon/footer_title5.svg" alt="icon" /> -->
                   Quick Links
                 </h3>
                 <div class="menu-all-pages-container">
@@ -2075,7 +2141,7 @@ Blog Area
             <div class="col-md-6 col-xl-3">
               <div class="widget widget_nav_menu footer-widget">
                 <h3 class="widget_title">
-                  <img src="assets/img/icon/footer_title5.svg" alt="icon" />
+                  <!-- <img src="assets/img/icon/footer_title5.svg" alt="icon" /> -->
                   Orthopedic Surgeries
                 </h3>
                 <div class="menu-all-pages-container">
@@ -2099,12 +2165,12 @@ Blog Area
             <div class="col-md-6 col-xl-3">
               <div class="widget newsletter-widget footer-widget">
                 <h3 class="widget_title">
-                  <img src="assets/img/icon/footer_title5.svg" alt="icon" />
+                  <!-- <img src="assets/img/icon/footer_title5.svg" alt="icon" /> -->
                   Locate Us
                 </h3>
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.8318930504547!2d77.5560449!3d13.014085099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae162a55555555%3A0x886d228d64097005!2sManipal%20Hospital%20Yeshwanthpur!5e1!3m2!1sen!2sin!4v1746517842598!5m2!1sen!2sin"
-                  style="border: 0; height: 230px; width: 100%"
+                  style="border: 0; height: 250px; width: 100%"
                   allowfullscreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
