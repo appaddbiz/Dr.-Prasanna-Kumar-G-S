@@ -99,7 +99,7 @@ Version: 1.0.0
 :root {
   --theme-color: #6cb446;
   --gr-color2: #fd8900;
-  --title-color: #1b8ec5;
+  --title-color: #0a336a;
   --body-color: #666666;
   --smoke-color: #f8f8f8;
   --smoke-color2: #ecf1ff;
@@ -8123,11 +8123,12 @@ ol.wp-block-rss {
 
 .breadcumb-wrapper {
   background-color: var(--title-color);
-  padding: 210px 0 125px 0;
+  padding: 100px 0 100px 0;
   overflow: hidden;
   text-align: center;
   max-width: 1832px;
   margin: 0 auto;
+  /* background-attachment: fixed; */
   /* border-radius: 24px; */
 }
 
@@ -8157,6 +8158,7 @@ ol.wp-block-rss {
 @media (max-width: 991px) {
   .breadcumb-wrapper {
     padding: 174px 0 90px 0;
+      background-attachment: scroll;
     /* border-radius: 10px 10px 15px 15px; */
   }
 }
