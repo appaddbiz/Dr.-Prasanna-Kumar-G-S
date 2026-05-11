@@ -6250,7 +6250,9 @@ ol.wp-block-rss {
   -webkit-transition: -webkit-transform 0.4s ease-in-out;
   transition: -webkit-transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  transition:
+    transform 0.4s ease-in-out,
+    -webkit-transform 0.4s ease-in-out;
 }
 
 .main-menu ul li.menu-item-has-children > a:hover:after {
@@ -8158,7 +8160,7 @@ ol.wp-block-rss {
 @media (max-width: 991px) {
   .breadcumb-wrapper {
     padding: 174px 0 90px 0;
-      background-attachment: scroll;
+    background-attachment: scroll;
     /* border-radius: 10px 10px 15px 15px; */
   }
 }
@@ -10500,7 +10502,9 @@ ul.comment-list:has(> .th-comment-item ~ .th-comment-item):first-child
   -webkit-transition: -webkit-transform ease 0.4s;
   transition: -webkit-transform ease 0.4s;
   transition: transform ease 0.4s;
-  transition: transform ease 0.4s, -webkit-transform ease 0.4s;
+  transition:
+    transform ease 0.4s,
+    -webkit-transform ease 0.4s;
   /* Large devices */
 }
 
@@ -20659,6 +20663,61 @@ span.select2-selection.select2-selection--single:focus {
   .space-extra2,
   .space-extra2-bottom {
     padding-bottom: 70px;
+  }
+}
+
+.sticky-sidebar {
+  position: fixed;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+}
+
+.sticky-sidebar > div {
+  width: 100%;
+}
+
+.sticky-sidebar a {
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 10px;
+  text-decoration: none;
+}
+
+.sticky-sidebar img {
+  height: 30px;
+  width: 30px;
+  font-weight: bold;
+}
+
+.sticky-sidebar p {
+  font-size: 12px;
+  color: white;
+}
+.appointment-mobile {
+  display: none;
+}
+.appointment-desk {
+  display: block;
+}
+
+.schedule-link {
+  background-color: #1c224f;
+}
+
+.locate-link {
+  background-color: #1c224f;
+}
+
+@media (min-width: 768px) {
+  .desk-view {
+    display: none;
   }
 }
 
