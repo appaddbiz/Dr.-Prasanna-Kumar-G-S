@@ -1,4 +1,32 @@
+# robots.txt for drprasannaortho.com
+# Updated: 2026-05-27 (IST)
+
+# --- Global defaults ---
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /login/
+Disallow: /search
+Disallow: /thank-you
+Disallow: /thank-you.html
+Crawl-delay: 5
 
+# --- AI / research bots ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# --- Sitemaps ---
 Sitemap: https://www.drprasannaortho.com/sitemap.xml
+
