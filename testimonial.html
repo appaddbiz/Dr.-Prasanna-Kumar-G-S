@@ -1449,7 +1449,90 @@
 </script>
 
 
-  <script src="/assets/js/visitor-counter.js"></script>
+  
+
+<script src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"></script>
+
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", async function () {
+
+    const counterElement = document.getElementById("footerVisitorCount");
+
+
+
+    if (!counterElement) {
+
+        return;
+
+    }
+
+
+
+    try {
+
+        const counter = new Counter({
+
+            workspace: "drprasannaortho-com"
+
+        });
+
+
+
+        let result;
+
+
+
+        /*
+
+         * Count this browser only once.
+
+         * Refreshing the page will not increase the counter again.
+
+         */
+
+        if (!localStorage.getItem("drprasannaVisitorCounted")) {
+
+            result = await counter.up("total-visitors");
+
+
+
+            localStorage.setItem(
+
+                "drprasannaVisitorCounted",
+
+                "true"
+
+            );
+
+        } else {
+
+            result = await counter.get("total-visitors");
+
+        }
+
+
+
+        counterElement.textContent =
+
+            Number(result.value || 0).toLocaleString("en-IN");
+
+
+
+    } catch (error) {
+
+        console.error("Visitor counter error:", error);
+
+        counterElement.textContent = "0";
+
+    }
+
+});
+
+</script>
 
 </body>
+
 </html>
