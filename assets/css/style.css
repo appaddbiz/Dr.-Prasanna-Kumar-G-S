@@ -20722,3 +20722,61 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 /*# sourceMappingURL=style.css.map */
+.copyright-wrap {
+    padding: 14px 0;
+}
+
+.copyright-wrap .copyright-text {
+    margin: 0;
+    color: #ffffff;
+}
+
+.footer-visitor-counter {
+    width: auto !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 15px;
+    margin: 0;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 30px;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.footer-counter-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.footer-counter-label {
+    color: #ffffff;
+}
+
+.footer-counter-number {
+    min-width: 18px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 991px) {
+    .copyright-wrap {
+        padding: 16px 0;
+    }
+
+    .footer-visitor-counter {
+        margin-bottom: 3px;
+    }
+
+    .copyright-wrap .copyright-text {
+        line-height: 1.7;
+    }
+}
