@@ -3205,7 +3205,52 @@ Faq Area
       }
     </script>
 
-<script src="/assets/js/visitor-counter.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", async function () {
+    const counterElement = document.getElementById("footerVisitorCount");
+
+    if (!counterElement) {
+        return;
+    }
+
+    const counter = new Counter({
+        version: "v1",
+        namespace: "drprasannaortho.com",
+        timeout: 5000
+    });
+
+    const storageKey = "drprasannaortho_visitor_counted";
+
+    try {
+        let result;
+
+        if (localStorage.getItem(storageKey) === "1") {
+            try {
+                result = await counter.get("total-visitors");
+            } catch (getError) {
+                result = await counter.up("total-visitors");
+            }
+        } else {
+            result = await counter.up("total-visitors");
+            localStorage.setItem(storageKey, "1");
+        }
+
+        const visitorCount =
+            result.value !== undefined
+                ? result.value
+                : result.count;
+
+        counterElement.textContent =
+            Number(visitorCount || 0).toLocaleString("en-IN");
+
+    } catch (error) {
+        console.error("Visitor counter error:", error);
+        counterElement.textContent = "0";
+    }
+});
+</script>
 
 
 </body>
