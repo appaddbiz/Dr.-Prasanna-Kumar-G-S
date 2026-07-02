@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:fo="http://www.w3.org/1999/XSL/Format"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
@@ -9,129 +13,173 @@
 
 <url>
   <loc>https://www.drprasannaortho.com/</loc>
-  <lastmod>2026-05-12T09:32:29+00:00</lastmod>
+  <lastmod>2026-07-02T12:31:30+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.drprasannaortho.com/about-doctor.html</loc>
-  <lastmod>2026-05-13T09:38:47+00:00</lastmod>
+  <lastmod>2026-07-02T12:31:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.drprasannaortho.com/orthopedic-surgeries.html</loc>
-  <lastmod>2026-05-13T09:38:48+00:00</lastmod>
+  <lastmod>2026-07-02T12:31:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.drprasannaortho.com/knee-replacement.html</loc>
-  <lastmod>2026-05-13T09:38:48+00:00</lastmod>
+  <lastmod>2026-07-02T12:31:31+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.drprasannaortho.com/hip-replacement.html</loc>
-  <lastmod>2026-05-13T09:38:48+00:00</lastmod>
+  <lastmod>2026-07-02T12:31:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.drprasannaortho.com/shoulder-replacement.html</loc>
-  <lastmod>2026-05-13T09:38:48+00:00</lastmod>
+  <lastmod>2026-07-02T12:31:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.drprasannaortho.com/foot-surgery.html</loc>
-  <lastmod>2026-05-13T09:38:49+00:00</lastmod>
+  <lastmod>2026-07-02T12:31:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.drprasannaortho.com/elbow-surgery.html</loc>
-  <lastmod>2026-05-13T09:38:49+00:00</lastmod>
+  <lastmod>2026-07-02T12:31:32+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.drprasannaortho.com/ankle-surgery.html</loc>
-  <lastmod>2026-05-13T09:38:49+00:00</lastmod>
+  <lastmod>2026-07-02T12:31:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.drprasannaortho.com/hand-surgery.html</loc>
-  <lastmod>2026-05-13T09:38:49+00:00</lastmod>
+  <lastmod>2026-07-02T12:31:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.drprasannaortho.com/wrist-surgery.html</loc>
-  <lastmod>2026-05-13T09:38:50+00:00</lastmod>
+  <lastmod>2026-07-02T12:31:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.drprasannaortho.com/arthroplasty-surgery.html</loc>
-  <lastmod>2026-05-13T09:38:50+00:00</lastmod>
+  <lastmod>2026-07-02T12:31:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.drprasannaortho.com/arthroscopic-surgery.html</loc>
-  <lastmod>2026-05-13T09:38:50+00:00</lastmod>
+  <lastmod>2026-07-02T12:31:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.drprasannaortho.com/pediatric-orthopedic-surgery.html</loc>
-  <lastmod>2026-05-13T09:38:50+00:00</lastmod>
+  <lastmod>2026-07-02T12:31:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.drprasannaortho.com/fracture-trauma.html</loc>
-  <lastmod>2026-05-13T09:38:51+00:00</lastmod>
+  <lastmod>2026-07-02T12:31:34+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.drprasannaortho.com/sports-injury-treatments.html</loc>
-  <lastmod>2026-05-13T09:38:51+00:00</lastmod>
+  <lastmod>2026-07-02T12:31:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.drprasannaortho.com/orthopedic-treatments.html</loc>
-  <lastmod>2026-05-13T09:38:51+00:00</lastmod>
+  <lastmod>2026-07-02T12:31:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.drprasannaortho.com/gallery.html</loc>
-  <lastmod>2026-05-13T09:38:51+00:00</lastmod>
+  <lastmod>2026-07-02T12:31:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.drprasannaortho.com/testimonial.html</loc>
-  <lastmod>2026-05-13T09:38:52+00:00</lastmod>
+  <lastmod>2026-07-02T12:31:35+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.drprasannaortho.com/contact.html</loc>
-  <lastmod>2026-05-13T09:38:52+00:00</lastmod>
+  <lastmod>2026-07-02T12:31:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.drprasannaortho.com/robotic-joint-replacement-surgery.html</loc>
+  <lastmod>2026-07-02T12:31:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.drprasannaortho.com/expert-orthopedic-consultation.html</loc>
-  <lastmod>2026-05-13T09:38:52+00:00</lastmod>
+  <lastmod>2026-07-02T12:31:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.drprasannaortho.com/expert-surgery-consultation-care.html</loc>
-  <lastmod>2026-05-13T09:38:52+00:00</lastmod>
+  <lastmod>2026-07-02T12:31:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.drprasannaortho.com/bmnc-injection.html</loc>
-  <lastmod>2026-05-13T09:38:52+00:00</lastmod>
+  <lastmod>2026-07-02T12:31:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.drprasannaortho.com/prp-therapy.html</loc>
-  <lastmod>2026-05-13T09:38:53+00:00</lastmod>
+  <lastmod>2026-07-02T12:31:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.drprasannaortho.com/stem-cell-therapy.html</loc>
-  <lastmod>2026-05-13T09:38:53+00:00</lastmod>
+  <lastmod>2026-07-02T12:31:37+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
+<url>
+  <loc>https://www.drprasannaortho.com/sitemap.html</loc>
+  <lastmod>2026-07-02T12:31:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.drprasannaortho.com/robotic-orthopedic-surgeon-in-jalahalli.html</loc>
+  <lastmod>2026-07-02T12:31:37+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.drprasannaortho.com/robotic-orthopedic-surgeon-in-dasarahalli.html</loc>
+  <lastmod>2026-07-02T12:31:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.drprasannaortho.com/robotic-orthopedic-surgeon-in-hesaraghatta-road.html</loc>
+  <lastmod>2026-07-02T12:31:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.drprasannaortho.com/robotic-orthopedic-surgeon-in-nagasandra.html</loc>
+  <lastmod>2026-07-02T12:31:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.drprasannaortho.com/robotic-orthopedic-surgeon-in-peenya.html</loc>
+  <lastmod>2026-07-02T12:31:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.drprasannaortho.com/robotic-orthopedic-surgeon-in-nandini-layout.html</loc>
+  <lastmod>2026-07-02T12:31:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.drprasannaortho.com/index.html</loc>
+  <lastmod>2026-07-02T12:31:39+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
 
 </urlset>
